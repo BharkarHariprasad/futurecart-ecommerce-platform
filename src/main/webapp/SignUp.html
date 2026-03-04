@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureCart – Sign Up</title>
+
+    <style>
+        /* =========================================================
+           Base Reset
+        ========================================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            background: #f5f6f8;
+            color: #222;
+            min-height: 100vh;
+
+            /* Page Centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================================================
+           Layout Grid (Centered)
+        ========================================================= */
+        .signup-layout {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* =========================================================
+           LEFT SIDE : Logo + Why Create Account
+        ========================================================= */
+        .left-info {
+            padding-left: 16px;
+        }
+
+        .logo-big {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #ff3f6c, #ff7a18);
+            color: #ffffff;
+            font-size: 38px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 12px 30px rgba(255, 63, 108, 0.30);
+            margin-bottom: 18px;
+        }
+
+        .signin-brand {
+            font-size: 32px;
+            font-weight: 800;
+            color: #282c3f;
+            margin-bottom: 4px;
+        }
+
+        .signin-tag {
+            font-size: 13px;
+            font-weight: 700;
+            color: #ff3f6c;
+            letter-spacing: 0.08em;
+            margin-bottom: 26px;
+        }
+
+        .left-title {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .left-text {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }
+
+        .benefit-box {
+            background: #ffffff;
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid #e6e9ee;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+        }
+
+        .benefit-item {
+            font-size: 14px;
+            margin: 8px 0;
+            color: #444;
+        }
+
+        /* =========================================================
+           RIGHT SIDE : Signup Form
+        ========================================================= */
+        .signup-card {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid #e6e9ee;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+        }
+
+        .form-title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .form-sub {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        label {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #dfe3e8;
+            background: #ffffff;
+            font-size: 14px;
+            outline: none;
+            transition: 0.15s ease;
+        }
+
+        input:focus {
+            border-color: #c7ddff;
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.06);
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px;
+            border-radius: 999px;
+            background: #ff3f6c;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .note {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .signup-link {
+            color: #ff3f6c;
+            font-weight: 700;
+        }
+
+        /* =========================================================
+           Responsive
+        ========================================================= */
+        @media (max-width: 900px) {
+            body {
+                padding: 16px;
+            }
+
+            .signup-layout {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .left-info {
+                padding: 0;
+            }
+
+            .logo-big {
+                margin: 0 auto 16px;
+            }
+
+            .benefit-box {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-layout">
+
+        <!-- ========== LEFT SIDE CONTENT ========== -->
+        <div class="left-info">
+
+            <a href="home" style="text-decoration:none; color:inherit;">
+
+    			<div class="logo-big">F</div>
+
+    			<div class="signin-brand">FUTURECART</div>
+   				<div class="signin-tag">SMART SHOPPING</div>
+
+			</a>
+
+            <div class="left-title">Why Create an Account?</div>
+
+            <div class="left-text">
+                Track your orders, save addresses, faster checkout and receive special exclusive deals.
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-item">✔ Faster Checkout</div>
+                <div class="benefit-item">✔ Track Orders</div>
+                <div class="benefit-item">✔ Save Addresses</div>
+                <div class="benefit-item">✔ Exclusive Member Discounts</div>
+            </div>
+
+        </div>
+
+        <!-- ========== RIGHT SIDE SIGNUP FORM ========== -->
+        <div class="signup-card">
+
+            <div class="form-title">Create your account</div>
+            <div class="form-sub">Enter your details below to get started.</div>
+
+            <form action="signup" method="post">
+
+    			<div class="form-group">
+        			<label>Full Name</label>
+        			<input type="text" name="fullName" placeholder="Enter your full name" required>
+    			</div>
+
+    			<div class="form-group">
+        			<label>Email</label>
+        			<input type="email" name="email" placeholder="you@example.com" required>
+    			</div>
+
+    			<div class="form-group">
+        			<label>Mobile Number</label>
+        			<input type="tel" name="mobile" placeholder="+91 98765 43210" required>
+    			</div>
+
+    			<!-- <div class="form-group">
+        			<label>Password</label>
+        			<input type="password" name="password" placeholder="Create a password" required>
+    			</div>
+
+    			<div class="form-group">
+        			<label>Confirm Password</label>
+        			<input type="password" name="confirmPassword" placeholder="Re-enter your password" required>
+    			</div> -->
+
+    			<button type="submit" class="btn-primary">Create Account</button>
+
+    			<div class="note">
+        			Already have an account?
+        			<a href="Login.html" class="signup-link">Login</a>
+    			</div>
+
+			</form>
+        </div>
+
+    </div>
+
+</body>
+</html>

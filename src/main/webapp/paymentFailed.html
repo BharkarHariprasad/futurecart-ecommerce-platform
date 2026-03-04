@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Payment Failed</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: system-ui, Arial, sans-serif;
+    background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: white;
+    padding: 32px 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 420px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.cross {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    background: #ef4444;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 16px;
+    font-weight: 800;
+    color: #7f1d1d;
+}
+
+p {
+    color: #991b1b;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-retry {
+    background: #ff3f6c;
+    color: white;
+}
+
+.btn-home {
+    background: #f3f4f6;
+    color: #111827;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="cross">✕</div>
+
+    <h2>Payment Failed</h2>
+    <p>We couldn’t process your payment. Please try again.</p>
+
+    <div class="btn-group">
+        <a href="payment" class="btn btn-retry">
+            TRY AGAIN
+        </a>
+        <a href="home" class="btn btn-home">
+            BACK TO HOME
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

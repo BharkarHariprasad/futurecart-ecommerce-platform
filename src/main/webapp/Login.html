@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureCart – Login</title>
+
+    <style>
+        /* =========================================================
+           Base Reset
+        ========================================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            background: #f5f6f8;
+            color: #222;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================================================
+           Center Login Container
+        ========================================================= */
+        .login-wrapper {
+            width: 100%;
+            max-width: 380px;
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid #e6e9ee;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+
+        /* =========================================================
+           Logo Styling
+        ========================================================= */
+        .logo-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #ff3f6c, #ff7a18);
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(255,63,108,0.25);
+        }
+
+        .brand-name {
+            font-size: 20px;
+            font-weight: 800;
+            margin-top: 8px;
+            color: #282c3f;
+        }
+
+        .brand-tag {
+            font-size: 11px;
+            font-weight: 700;
+            color: #ff3f6c;
+            letter-spacing: 0.08em;
+        }
+
+        /* =========================================================
+           Form Title + Subtitle
+        ========================================================= */
+        .form-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #111827;
+        }
+
+        .form-sub {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 18px;
+        }
+
+        /* =========================================================
+           Inputs
+        ========================================================= */
+        .form-group {
+            text-align: left;
+            margin-bottom: 14px;
+        }
+
+        label {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #dfe3e8;
+            background: #ffffff;
+            font-size: 14px;
+            outline: none;
+            transition: 0.15s ease;
+        }
+
+        input:focus {
+            border-color: #c7ddff;
+            box-shadow: 0 6px 16px rgba(37,99,235,0.06);
+        }
+
+        /* =========================================================
+           Buttons
+        ========================================================= */
+        .btn-primary {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 700;
+            background: #ff3f6c;
+            color: #ffffff;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+
+        .link-row {
+            margin: 12px 0 18px 0;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .muted-link {
+            color: #6b7280;
+        }
+
+        .signup-link {
+            color: #ff3f6c;
+            font-weight: 700;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 14px;
+        }
+
+    </style>
+</head>
+<body>	
+
+    	<div class="login-wrapper">
+
+    	<!-- Logo -->
+    	<a href="home" style="text-decoration:none; color:inherit;">
+        	<div class="logo-box">
+            	<div class="logo-icon">F</div>
+            	<div class="brand-name">FUTURECART</div>
+            	<div class="brand-tag">SMART SHOPPING</div>
+        	</div>
+    	</a>
+
+    	<!-- Title -->
+    	<div class="form-title">Login</div>
+    	<div class="form-sub">Enter your email or mobile number to continue.</div>
+
+    	<!-- Login Form -->
+    	<form action="login" method="post">  <!-- fix based on your servlet -->
+
+        	<div class="form-group">
+    <label>Email or Mobile</label>
+
+    <input type="text"
+           name="loginId"
+           id="loginId"
+           placeholder="you@example.com or +91 98765 43210"
+           required>
+
+    <!-- Error message -->
+    <div id="loginError"
+         style="display:none;
+                margin-top:6px;
+                font-size:12px;
+                color:#d32f2f;
+                font-weight:600;">
+        Your account is blocked...
+    </div>
+</div>
+
+        	<div class="link-row">
+            	<a href="#" class="muted-link">Forgot password?</a>
+            	<a href="SignUp.html" class="signup-link">Create account</a>
+        	</div>
+
+        	<button type="submit" class="btn-primary">Login</button>
+
+        	<div class="note">
+            	New to FutureCart? <a href="SignUp.html" class="signup-link">Sign up</a>
+        	</div>
+
+    	</form>
+	</div>
+	
+	<script>
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("error") === "blocked") {
+        document.getElementById("loginError").style.display = "block";
+        document.getElementById("loginId").style.borderColor = "#d32f2f";
+    }
+</script>
+
+</body>
+</html>
