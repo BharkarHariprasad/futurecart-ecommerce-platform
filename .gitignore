@@ -1,0 +1,21 @@
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Build folders
+/build/
+/target/
+/bin/
+
+# Tomcat server
+/Servers/
+
+# Compiled Java files
+*.class
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
