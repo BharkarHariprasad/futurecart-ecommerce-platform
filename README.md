@@ -1,9 +1,10 @@
-# 🛒 FutureCart – Full Stack E-Commerce Web Application
+# 🛒 FutureCart – Servlet-Based E-Commerce Web Application
 
-FutureCart is a full-stack e-commerce web application developed using **Java Servlets, JSP, JDBC, and MySQL**.  
-The system allows users to browse products, manage shopping carts, and place orders through a session-based authentication system.
+FutureCart is a full-stack e-commerce web application developed using **Java Servlets, JSP, JDBC, and MySQL**.
 
-The application follows a **layered architecture** separating request handling, business logic, data access, and persistence layers for maintainable and scalable backend development.
+The system enables users to browse products, manage shopping carts, and place orders through a session-based authentication system.
+
+The backend follows a **layered architecture**, separating request handling, business logic, data access, and persistence layers to maintain clean separation of concerns and improve maintainability.
 
 ---
 
@@ -105,40 +106,38 @@ src/main/webapp
 
 ---
 
-# 🖥 Application Screenshots
+## ⚙️ Backend Considerations
 
-## Login Page
+- Implemented session-based authentication using **HttpSession** to maintain user state across requests.
 
+- Designed database queries to efficiently retrieve product listings and related entities.
+
+- Structured the application using a **DAO-style data access layer** to abstract database operations from business logic.
+
+- Implemented input validation for user registration, login, and order processing workflows.
+
+- Designed the system to support scalable product listings that can be extended with pagination in future improvements.
+
+---
+
+## 🖥 Application Screenshots
+
+### Login Page
 ![Login Page](screenshots/login.png)
 
----
-
-## Home Page
-
+### Home Page
 ![Home Page](screenshots/home.png)
 
----
-
-## Product Listing
-
+### Product Listing
 ![Product Listing](screenshots/product-list.png)
 
----
-
-## Product Details
-
+### Product Details
 ![Product Details](screenshots/product-details.png)
 
----
-
-## Cart Page
-
+### Cart Page
 ![Cart Page](screenshots/cart.png)
 
----
-
-## Admin Dashboard
-
+### Admin Dashboard
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ---
@@ -209,14 +208,21 @@ http://localhost:8080/FutureCart
 
 ---
 
-# 📌 Key Learning Outcomes
+## 📌 Key Engineering Outcomes
 
-- Servlet based web application development
-- HTTP request-response lifecycle
-- Session management using HttpSession
-- JDBC database integration
-- Layered architecture design
-- Full stack Java web development without frameworks
+- Designed a layered backend architecture separating request handling, business logic, data access, and persistence layers.
+
+- Implemented session-based authentication and user state management using HttpSession.
+
+- Developed a relational database schema supporting product catalog, cart management, order processing, and user accounts.
+
+- Built modular data access components using JDBC to handle database communication and CRUD operations.
+
+- Implemented the complete HTTP request–response lifecycle using Java Servlets for server-side processing.
+
+- Structured the application using reusable JSP components to separate presentation from backend logic.
+
+- Developed an admin module to manage products, users, and order status within the system.
 
 ---
 
@@ -224,4 +230,4 @@ http://localhost:8080/FutureCart
 
 Hariprasad Bharkar
 
-Java Full Stack Developer
+Java Backend Developer
