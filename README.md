@@ -120,25 +120,35 @@ src/main/webapp
 
 ---
 
-## 🖥 Application Screenshots
+# 🖥 Application Screenshots
 
-### Login Page
-![Login Page](screenshots/login.png)
+## Login Page
+<img src="screenshots/login.jpeg" width="900"/>
 
-### Home Page
-![Home Page](screenshots/home.png)
+---
 
-### Product Listing
-![Product Listing](screenshots/product-list.png)
+## Home Page
+<img src="screenshots/home.jpeg" width="900"/>
 
-### Product Details
-![Product Details](screenshots/product-details.png)
+---
 
-### Cart Page
-![Cart Page](screenshots/cart.png)
+## Product Listing
+<img src="screenshots/product-list.jpeg" width="900"/>
 
-### Admin Dashboard
-![Admin Dashboard](screenshots/admin-dashboard.png)
+---
+
+## Product Details
+<img src="screenshots/product-details.jpeg" width="900"/>
+
+---
+
+## Cart Page
+<img src="screenshots/cart.jpeg" width="900"/>
+
+---
+
+## Admin Dashboard
+<img src="screenshots/admin-dashboard.jpeg" width="900"/>
 
 ---
 
